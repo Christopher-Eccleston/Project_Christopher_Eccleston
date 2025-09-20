@@ -1,0 +1,62 @@
+body {
+  font-size:1em;
+  font-family:Arial;
+  background: #F0EAD6;
+}
+
+#hellomessage {
+  font-weight:bold;
+}
+
+#TitleBlock {
+  font-weight:bold;
+  font-size:larger;
+  font-family:arial;
+}
+
+div.searchbar {
+  overflow: hidden;
+  position: relative;
+}
+
+div.searchbar [type=text] {
+  float: left;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+div.scrollmenu {
+  background-color: gray;
+  overflow: auto;
+  white-space: nowrap;
+  padding-inline: 10px;
+
+  scrollbar-color: white darkgray;
+  scrollbar-width: thin;
+}
+
+div.scrollmenu img{
+  width: 200px;
+  height: 150px;
+}
+
+div.scrollmenu a {
+  display: inline-flex;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+div.scrollmenu a + a {
+  margin-left: 5px;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
