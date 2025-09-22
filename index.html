@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <div class="content">
+<head>
+<link href="Styles/Homepage.css" rel="stylesheet" />
+    <title>CapstoneProject</title>
+    <meta charset="utf-8" />
+    <p id="TitleBlock">Placeholder Title</p>
+</head>
+<body>
+
+<div class="searchbar">
+  <input type="text" placeholder="Search...">
+</div>
+
+<!-- Link local image within same folder
+<img src="Images/dawg.png" alt="dawg">
+-->
+<!-- Link local webpage within same folder-->
+<div class="scrollmenu">
+  <a href="Subpages/GPUS.html"><img src="Images/GPU.jpg" alt="GPU"></a>
+  <a href="Subpages/CPUS.html"><img src="Images/CPU.jpg" alt="CPU"></a>
+  <a href="Subpages/MEMORY.html"><img src="Images/RAM.jpg" alt="RAM"></a>
+  <a href="Subpages/STORAGE.html"><img src="Images/STORAGE.jpg" alt="Storage" ></a>
+  <a href="Subpages/MOBOS.html"><img src="Images/MOBO.jpg" alt="Motherboard"></a>
+  <a href="Subpages/PSUS.html"><img src="Images/PSU.jpg" alt="PSU"></a>
+  <a href="Subpages/FANS.html"><img src="Images/FANS.jpg" alt="Fans"></a>
+  <a href="Subpages/CASES.html"><img src="Images/CASES.jpg" alt="Cases"></a>
+  <a href="Subpages/CABLES.html"><img src="Images/CABLES.jpg" alt="Cables"></a>
+  <a href="Subpages/PERIPHERALS.html"><img src="Images/PERIPHERALS.jpg" alt="Peripherals"></a>
+  <a href="Subpages/ACCESSORIES.html"><img src="Images/ACCESSORIES.jpg" alt="Accessories"></a>
+</div>
+
+<form method="GET">
+    What is your name: <input type="text" size="20" id="myname" onkeydown = "if (event.keyCode == 13)  document.getElementById('mybutton').click()"   />
+  <input type="text" style="display: none;" />
+  <button type="button" id="mybutton">Submit</button>
+</form>
+<div id="hellomessage">TEST</div>
+
+<script src="Javascript/Week1.js"></script>
+
+</div>
+</body>
+</html>

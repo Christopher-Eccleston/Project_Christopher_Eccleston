@@ -9,34 +9,49 @@ body {
 }
 
 #TitleBlock {
+  overflow: hidden;
+  position: sticky;
   font-weight:bold;
   font-size:larger;
   font-family:arial;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+div.content {
+  margin: 0 0;
+  max-width: 960;
+  height: auto;
 }
 
 div.searchbar {
   overflow: hidden;
   position: relative;
+  bottom: 55px;
+  margin-left: 160px;
 }
 
 div.searchbar [type=text] {
   float: left;
+  border-color: black;
   padding: 6px;
-  border: none;
-  margin-top: 8px;
+  margin-top: 10px;
   margin-right: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 16px;
+  margin-left: 10px;
+  width: 30%;
+  height: auto;
 }
 
-div.scrollmenu {
+div.scrollmenu { 
   background-color: gray;
   overflow: auto;
   white-space: nowrap;
   padding-inline: 10px;
-
   scrollbar-color: white darkgray;
   scrollbar-width: thin;
+  margin-top: -45px;
 }
 
 div.scrollmenu img{
