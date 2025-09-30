@@ -5,6 +5,7 @@
     <link href="../Styles/Homepage.css" rel="stylesheet" />
     <title>Product Page</title>
     <script src="../Javascript/Cart.js" async></script>
+    <script src="../Javascript/ReviewSystem.js" async></script>
     </head>
     <body>
         <h1>Product Details</h1>
@@ -16,6 +17,23 @@
                 <p class="productCondition" id="productCondition"></p>
                 <div id="productCondition"></div>
                 <p class="productDescription" id="productDescription"></p>
+            </div>
+            <div class="reviewSystem">
+                <h2>User Reviews</h2>
+                <span id="totalScore">0.0⭐</span>
+                <span id="ratingValue">0 ⭐</span>
+            </div>
+            <div class="stars" id="stars">
+                <span class="star" data-value="1">⭐</span>
+                <span class="star" data-value="2">⭐</span>
+                <span class="star" data-value="3">⭐</span>
+                <span class="star" data-value="4">⭐</span>
+                <span class="star" data-value="5">⭐</span>
+            </div>
+            <p>Write a review:</p>
+            <textarea id="reviewText" rows="4" cols="50" placeholder="Write your review here..."></textarea>
+            <button id="submitReview">Submit Review</button>
+            <div class="reviewList" id="reviewList">
             </div>
             <button class="addToCart" type="button">Add to cart</button>
         </div>
