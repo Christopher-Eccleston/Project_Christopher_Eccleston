@@ -1,9 +1,8 @@
-function ShowHelloMessage() {
+/*function ShowHelloMessage() {
     var name = document.getElementById("myname");
     document.getElementById("hellomessage").innerHTML = "Hello, " + name.value;
 }
-
-//document.getElementById("mybutton").onclick = ShowHelloMessage;
+document.getElementById("mybutton").onclick = ShowHelloMessage;*/
 
 let parsedData = [];
 const fileUrl = '/Database/Data.csv'

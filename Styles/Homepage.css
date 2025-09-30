@@ -1,21 +1,34 @@
-body {
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+html,body {
+  margin: 0;
   font-size:1em;
-  font-family:Arial;
   background: #F0EAD6;
 }
 
-#hellomessage {
-  font-weight:bold;
+.main-header {
+  background-color: lightgray;
+  background-size: cover;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
 }
 
 #TitleBlock {
-  overflow: hidden;
-  position: sticky;
-  font-weight:bold;
-  font-size:larger;
-  font-family:arial;
-  margin-top: 10px;
-  margin-left: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
 }
 
 div.content {
@@ -25,23 +38,31 @@ div.content {
 }
 
 div.searchbar {
-  overflow: hidden;
-  position: relative;
-  bottom: 55px;
-  margin-left: 160px;
+  display: flex;
+  flex-grow: 1;
+  max-width: 60%;
+  align-items: center;
+  gap: 10px;
 }
 
 div.searchbar [type=text] {
-  float: left;
-  border-color: black;
-  padding: 6px;
-  margin-top: 10px;
-  margin-right: 16px;
-  margin-bottom: 10px;
+  flex-grow: 1;
+  padding: 8px;
   font-size: 16px;
-  margin-left: 10px;
-  width: 30%;
-  height: auto;
+  min-width: 100px;
+  border: 1px solid #333;
+  border-radius: 4px 0 0 4px;
+}
+
+.searchbar button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid #333;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
 }
 
 div.scrollmenu { 
@@ -51,7 +72,6 @@ div.scrollmenu {
   padding-inline: 10px;
   scrollbar-color: white darkgray;
   scrollbar-width: thin;
-  margin-top: -45px;
 }
 
 div.scrollmenu img{
@@ -79,6 +99,5 @@ div.scrollmenu a:hover {
 div.cart-total {
   margin-left: 200px;
   position: fixed;
-  bottom: 400px;
   background-color: lightgray;
 }
