@@ -43,6 +43,7 @@ div.searchbar {
   max-width: 60%;
   align-items: center;
   gap: 10px;
+  position: relative;
 }
 
 div.searchbar [type=text] {
@@ -63,6 +64,32 @@ div.searchbar [type=text] {
   background-color: #555;
   color: white;
   cursor: pointer;
+}
+
+.search-popup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-height: 300px;
+  overflow-y: auto;
+  display: none;
+  margin-top: -1px;
+}
+
+.search-popup div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-popup {
+  background-color: #f2f2f2;
 }
 
 div.scrollmenu { 

@@ -40,6 +40,7 @@ searchButton.addEventListener('click', function() {
     searchResults.textContent = "";
 
     if (!query) {
+        searchResults.style.display = "block";
         searchResults.textContent = "Please enter a search term";
         return;
     }
@@ -55,6 +56,7 @@ searchButton.addEventListener('click', function() {
 
 if (filterdResults.length > 0) {
     searchResults.innerHTML = ""; // Clear previous results
+    searchResults.style.display = "block";
 
     filterdResults.forEach(product => {
         const div = document.createElement('div');
@@ -71,6 +73,7 @@ if (filterdResults.length > 0) {
         searchResults.appendChild(div);
     });
 } else {
+    searchResults.style.display = "block";
     searchResults.textContent = "No matching results found.";
 }
 });
