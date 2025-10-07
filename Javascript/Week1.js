@@ -78,6 +78,11 @@ if (filterdResults.length > 0) {
 }
 });
 
+searchBar.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        searchButton.click();
+    }
+});
 
 function displayProduct(productName) {
     console.log("Searching for product:", productName);
@@ -97,3 +102,16 @@ function displayProduct(productName) {
         document.getElementById("ProductError").textContent = "Product not found.";
     }
 }
+
+document.addEventListener('click', function(event) {
+    const isClickInsideSearchBar = searchBar.contains(event.target);
+    const isClickInsideResults = searchResults.contains(event.target);
+    const isClickInsideSearchButton = searchButton.contains(event.target);
+
+    if (!isClickInsideSearchBar && !isClickInsideResults && !isClickInsideSearchButton) {
+        // Delay hiding to allow other click handlers to run
+        setTimeout(() => {
+            searchResults.style.display = "none";
+        }, 0);
+    }
+});
