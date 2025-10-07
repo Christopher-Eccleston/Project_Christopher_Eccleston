@@ -15,6 +15,7 @@ html,body {
   padding-top: 25px;
   padding-bottom: 15px;
   padding-left: 15px;
+  width: 100%;
 }
 
 .header-content {
@@ -22,6 +23,7 @@ html,body {
   align-items: center;
   gap: 20px;
   flex-wrap: nowrap;
+  width: 100%;
 }
 
 #TitleBlock {
@@ -35,6 +37,7 @@ div.content {
   margin: 0 0;
   max-width: 960;
   height: auto;
+  width: 100%;
 }
 
 div.searchbar {
@@ -123,8 +126,13 @@ div.scrollmenu a:hover {
   background-color: #777;
 }
 
-div.cart-total {
-  margin-left: 200px;
-  position: fixed;
-  background-color: lightgray;
+div.header-content img{
+  width: 30px;
+  height: 30px;
+  margin-right: auto;
+}
+
+div.cartIcon {
+  margin-left: auto;
+  padding-right: 25px;
 }

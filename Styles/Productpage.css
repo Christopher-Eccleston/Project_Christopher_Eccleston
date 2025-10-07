@@ -1,0 +1,43 @@
+.product-container {
+    color: black;
+    display: block;
+    font-size: 1.25em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.product-details {
+    border-bottom: 1px solid black;
+    display: inline-block;
+}
+
+.add-to-cart {
+    background-color: lightblue;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.add-to-cart:hover {
+    background-color: rgb(120, 205, 233);
+}
+
+.submit-review {
+    background-color: gold;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    width: auto;
+    height: 20px;
+    position: relative;
+    margin-top: 23px;
+    margin-left: 5px;
+}
+
+.submit-review:hover {
+    background-color: rgb(206, 175, 0);
+}
+
+.review-area {
+    display: flex;
+}

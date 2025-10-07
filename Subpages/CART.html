@@ -3,29 +3,32 @@
 <head>
     <meta charset="utf-8" />
     <link href="../Styles/Homepage.css" rel="stylesheet" />
+    <link href="../Styles/Cartpage.css" rel="stylesheet" />
     <title>Shopping Cart</title>
     <script src="../Javascript/Cart.js" async></script>
 </head>
 <body>
   <header class="main-header">
     <div class="header-content">
-      <h1 id="TitleBlock">Placeholder Title</h1>
+      <h1 id="TitleBlock">Chris's Computer Connections</h1>
       <div class="searchbar">
         <input type="text" id="searchBar" placeholder="Search for a product...">
         <button id="searchButton">Search</button>
         <pre id="searchResults"class="search-popup"></pre>
       </div>
+      <div class="cartIcon">
+      <a href="../Subpages/CART.html"><img src="../Images/CART.png" alt="Shopping Cart"></a>
+      </div>
     </div>
   </header>
-<h1>Placeholder Title</h1>
+<div class = "cart-container">
 <h2>Shopping Cart</h2>
     <div class="cart-items">
     </div>
-    <hr>
     <div class ="cart-total">
-        <strong>Total</strong>: <span class="cart-total-price">$0.00</span>
-        <button class="btn btn-primary btn-checkout" type="button">Checkout</button>
+        <span class="cart-total-title">Total</span>: <span class="cart-total-price">$0.00</span>
     </div>
+    <button class="btn btn-primary btn-checkout" type="button">Checkout</button>
     </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>

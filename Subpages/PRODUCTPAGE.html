@@ -3,6 +3,7 @@
     <head>
     <meta charset="utf-8" />
     <link href="../Styles/Homepage.css" rel="stylesheet" />
+    <link href="../Styles/Productpage.css" rel="stylesheet" />
     <title>Product Page</title>
     <script src="../Javascript/Cart.js" async></script>
     <script src="../Javascript/ReviewSystem.js" async></script>
@@ -10,17 +11,19 @@
     <body>
         <header class="main-header">
             <div class="header-content">
-                <h1 id="TitleBlock">Placeholder Title</h1>
+                <h1 id="TitleBlock">Chris's Computer Connections</h1>
                 <div class="searchbar">
                     <input type="text" id="searchBar" placeholder="Search for a product...">
                     <button id="searchButton">Search</button>
                     <pre id="searchResults"class="search-popup"></pre>
                 </div>
+                <div class="cartIcon">
+                    <a href="../Subpages/CART.html"><img src="../Images/CART.png" alt="Shopping Cart"></a>
+                </div>
             </div>
         </header>
-
-        <h1>Product Details</h1>
-        <div class="productContainer">
+        <div class="product-container">
+            <h1>Product Details</h1>
             <div class="product-details">
                 <h1 class="productName" id="productName"></h1>
                 <p class="productType" id="productType"></p>
@@ -42,13 +45,15 @@
                 <span class="star" data-value="5">⭐</span>
             </div>
             <p>Write a review:</p>
+            <div class="review-area">
             <textarea id="reviewText" rows="4" cols="50" placeholder="Write your review here..."></textarea>
-            <button id="submitReview">Submit Review</button>
+            <button class="submit-review" id="submitReview">Submit Review</button>
+            </div>
             <div class="reviewList" id="reviewList">
             </div>
-            <button class="addToCart" type="button">Add to cart</button>
+            <button class="add-to-cart" type="button">Add to cart</button>
+            <a href="../Subpages/CART.html">Go to Cart</a>
         </div>
-        <a href="../Subpages/CART.html">Go to Cart</a>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
         <script src="../Javascript/Week1.js"></script>
     </body>
