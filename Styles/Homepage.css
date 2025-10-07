@@ -95,13 +95,35 @@ div.searchbar [type=text] {
   background-color: #f2f2f2;
 }
 
-div.scrollmenu { 
+div.scrollmenu, div.previews { 
   background-color: gray;
   overflow: auto;
   white-space: nowrap;
   padding-inline: 10px;
   scrollbar-color: white darkgray;
   scrollbar-width: thin;
+}
+
+.product-preview {
+    display: inline-flex; /* Match div.scrollmenu a */
+    flex-direction: column; /* Stack name, price, description */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 220px;
+    margin-right: 5px;
+}
+
+.product-preview h3, .product-preview p {
+    margin: 5px 0;
+    text-align: left;
+}
+
+/* Apply hover effect */
+.product-preview:hover {
+    background-color: #777; /* Match div.scrollmenu a:hover */
 }
 
 div.scrollmenu img{

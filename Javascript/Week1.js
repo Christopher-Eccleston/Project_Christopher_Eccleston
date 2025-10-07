@@ -6,6 +6,7 @@ document.getElementById("mybutton").onclick = ShowHelloMessage;*/
 
 let parsedData = [];
 const fileUrl = '/Database/Data.csv'
+const path = window.location.pathname;
 
 Papa.parse(fileUrl, {
     download: true,
@@ -18,6 +19,11 @@ Papa.parse(fileUrl, {
 
         const params = new URLSearchParams(window.location.search);
         const productName = params.get("product");
+
+        //Call display preview item function only if on the homepage
+        if (path === '/' || path.endsWith('/index.html')) {
+            displayPreviews();
+        }
 
         if (productName) {
             displayProduct(productName);
@@ -33,6 +39,35 @@ Papa.parse(fileUrl, {
 const searchBar = document.getElementById('searchBar');
 const searchButton = document.getElementById('searchButton');
 const searchResults = document.getElementById('searchResults');
+const previewsDiv = document.querySelector('.previews');
+
+//Display preview items
+function displayPreviews() {
+    previewsDiv.innerHTML = "";
+
+    //Get first 10 items
+    const productsToDisplay = parsedData.slice(0, 10);
+
+    //Loop through and create HTML elements
+    productsToDisplay.forEach(product => {
+        //Check to make sure product has the correct data before proceeding
+        if (product.name && product.price) {
+            const productElement = document.createElement('div');
+            productElement.classList.add('product-preview');
+
+            productElement.innerHTML = `
+                <h3>${product.name}</h3>
+                <p>Price: ${product.price}</p>
+                <p>${product.description || "No description available."}</p>
+            `;
+
+            previewsDiv.appendChild(productElement);
+
+        }
+    });
+
+    console.log(`Displayed ${productsToDisplay.length} product previews.`);
+}
 
 searchButton.addEventListener('click', function() {
     const query = searchBar.value.toLowerCase();

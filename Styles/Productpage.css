@@ -3,7 +3,7 @@
     display: block;
     font-size: 1.25em;
     max-width: 900px;
-    margin: 0 auto;
+    margin-left: 25px;
 }
 
 .product-details {
@@ -16,6 +16,7 @@
     border: none;
     border-radius: .3em;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .add-to-cart:hover {
@@ -32,6 +33,7 @@
     position: relative;
     margin-top: 23px;
     margin-left: 5px;
+    cursor: pointer;
 }
 
 .submit-review:hover {
